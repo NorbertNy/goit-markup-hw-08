@@ -1,0 +1,32 @@
+.footer {
+    @include section-indent($pt: 60px);
+
+    background-color: var(--hero-footer-black-color);
+}
+
+.footer__container {
+    display: flex;
+    align-items: baseline;
+}
+
+.footer__address {
+    margin-top: 20px;
+    font-style: normal;
+}
+
+.footer__list {
+    display: flex;
+    flex-direction: column;
+    gap: 9px; 
+}
+
+.footer__link {
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    color: var(--alternativ-gray-color-rgba);
+
+    &--map {
+    color: var(--primary-white-color);
+    }
+}
+ 

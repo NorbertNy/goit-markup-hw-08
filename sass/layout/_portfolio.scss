@@ -1,0 +1,12 @@
+.portfolio {
+    @include section-indent;   
+}
+
+.portfolio__list {
+    display: flex;
+    margin-bottom: 50px;
+    justify-content: center;
+    list-style-type: none;
+    gap: 8px;
+}
+

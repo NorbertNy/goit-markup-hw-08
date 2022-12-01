@@ -1,0 +1,44 @@
+.costomers {
+    @include section-indent
+}
+
+.costomers__title {
+    @extend %section-title;
+}
+
+.costomers__list {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.costomers__item {
+    width: 170px;
+    height: 92px;
+}
+
+.costomers__link {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    border: 1px solid var(--primary-icon-gray-color);
+    border-radius: 4px;
+
+    align-items: center;
+    justify-content: center;
+
+    color: var(--primary-icon-gray-color);
+    transition: color var(--transition-color-function), border-color var(--transition-color-function);
+
+    &:hover,
+    &:focus {
+        color: var(--primary-blue-color);
+        border-color: var(--primary-blue-color);
+        }
+}
+
+.costomer__icon {
+    fill: currentColor;
+}
