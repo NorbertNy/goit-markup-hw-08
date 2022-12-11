@@ -1,3 +1,17 @@
 .header {
     border-bottom: 1px solid var(--header-border-gray-color);
+
+    @media screen and(max-width: 767.8px) {
+        padding: 10px 0;
+        
+    }
+
+    &__container {
+        @include container;
+
+        @media screen and(min-width: 768px) {
+            @include flex($jc: space-between)
+            
+        }
+    }
 }

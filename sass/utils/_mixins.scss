@@ -1,3 +1,52 @@
+@mixin container($w: 480px, $mar: 0 auto, $pad: 0 15px) {
+    @if $w {
+        max-width: $w;
+
+        @media screen and(min-width: 768px) {
+            max-width: 768px;
+        }
+
+        @media screen and(min-width: 1200px) {
+            max-width: 1200px;
+            
+        }
+    }
+
+    @if $mar {
+        margin: $mar;
+    }
+
+    @if $pad {
+        padding: $pad;
+    }
+}
+
+@mixin flex($dis: flex, $fw: false, $fd: false, $ai: center, $jc: center, $indent: false) {
+    @if $dis {
+        display: $dis;
+    }
+
+    @if $fw {
+        flex-wrap: $fw;
+    }
+
+    @if $fd {
+        flex-direction: $fd;
+    }
+
+    @if $ai {
+        align-items: $ai;
+    }
+
+    @if $jc {
+        justify-content: $jc;
+    }
+
+    @if $indent {
+        gap: $indent;
+    }
+}
+
 @mixin section-indent($pt: 94px, $pb: $pt) {
     padding-top: $pt;
     padding-bottom: $pb;

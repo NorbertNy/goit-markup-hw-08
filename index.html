@@ -13,57 +13,67 @@
 
 	<body class="body">
 		<!-- Header -->
+
 		<header class="header">
-			<nav class="navigation container">
-				<a class="logo" href="./index.html">
-					Web<span class="logo__end-dark">Studio</span>
-				</a>
-				<ul class="navigation__list">
-					<li class="navigation__item">
-						<a
-							class="navigation__link navigation__link--current"
-							href="./index.html"
-							>Студія</a
-						>
-					</li>
-					<li class="navigation__item">
-						<a class="navigation__link" href="./portfolio.html">Портфоліо</a>
-					</li>
-					<li class="navigation__item">
-						<a class="navigation__link" href="#">Контакти</a>
-					</li>
-				</ul>
-				<!-- Header address -->
-				<ul class="contacts">
-					<li class="contacts__item">
-						<a class="contacts__link" href="mailto:info@devstudio.com">
-							<svg class="contacts__icon" width="16px" height="12px">
-								<use href="./images/symbol-defs.svg#icon-envelope"></use>
-							</svg>
-							info@devstudio.com
-						</a>
-					</li>
-					<li class="contacts__item">
-						<a class="contacts__link" href="tel:+380961111111">
-							<svg class="contacts__icon" width="10" height="16">
-								<use href="./images/symbol-defs.svg#icon-smartphone"></use>
-							</svg>
-							+38 096 111 11 11
-						</a>
-					</li>
-				</ul>
-			</nav>
+			<div class="header__container">
+				<nav class="navigation">
+					<a class="logo" href="./index.html">
+						Web<span class="logo__end-dark">Studio</span>
+					</a>
+					<ul class="navigation__list">
+						<li class="navigation__item">
+							<a
+								class="navigation__link navigation__link--current"
+								href="./index.html"
+								>Студія</a
+							>
+						</li>
+						<li class="navigation__item">
+							<a class="navigation__link" href="./portfolio.html">Портфоліо</a>
+						</li>
+						<li class="navigation__item">
+							<a class="navigation__link" href="#">Контакти</a>
+						</li>
+					</ul>
+
+					Header address
+
+					<ul class="contacts">
+						<li class="contacts__item">
+							<a class="contacts__link" href="mailto:info@devstudio.com">
+								<svg class="contacts__icon" width="16px" height="12px">
+									<use href="./images/symbol-defs.svg#icon-envelope"></use>
+								</svg>
+								info@devstudio.com
+							</a>
+						</li>
+						<li class="contacts__item">
+							<a class="contacts__link" href="tel:+380961111111">
+								<svg class="contacts__icon" width="10" height="16">
+									<use href="./images/symbol-defs.svg#icon-smartphone"></use>
+								</svg>
+								+38 096 111 11 11
+							</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
 		</header>
+
 		<!--Main-->
+
 		<main class="main">
-			<section class="hero">
+			<!-- <section class="hero">
 				<h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
 				<button class="hero__button" data-modal-open type="button">
 					Замовити послугу
 				</button>
-			</section>
-			<section class="features">
-				<!-- скрыть заголовок -->
+			</section> -->
+			<!-- <section class="features">
+
+				скрыть заголовок
+
+
 				<h2 class="features__title visually-hidden">Особливості</h2>
 				<div class="features__container container">
 					<ul class="features__list">
@@ -96,8 +106,8 @@
 						</li>
 					</ul>
 				</div>
-			</section>
-			<section class="activity">
+			</section> -->
+			<!-- <section class="activity">
 				<div class="activity__container container">
 					<h2 class="activity__title">Чим ми займаємося</h2>
 					<ul class="activity__list">
@@ -136,8 +146,8 @@
 						</li>
 					</ul>
 				</div>
-			</section>
-			<section class="team">
+			</section> -->
+			<!-- <section class="team">
 				<div class="team__container container">
 					<h2 class="team__title">Наша команда</h2>
 					<ul class="team__list">
@@ -323,8 +333,8 @@
 						</li>
 					</ul>
 				</div>
-			</section>
-			<section class="costomers">
+			</section> -->
+			<!-- <section class="costomers">
 				<div class="costomers__container container">
 					<h2 class="costomers__title">Постійні клієнти</h2>
 					<ul class="costomers__list">
@@ -372,12 +382,14 @@
 						</li>
 					</ul>
 				</div>
-			</section>
+			</section> -->
 		</main>
 		<!--Footer-->
-		<footer class="footer">
+
+		<!-- <footer class="footer">
 			<div class="footer__container container">
-				<!-- contacts -->
+				contacts
+
 				<div class="footer__contacts">
 					<a class="logo" href="./index.html"
 						>Web<span class="logo__end-light">Studio</span></a
@@ -407,7 +419,8 @@
 					</address>
 				</div>
 
-				<!-- social -->
+				social
+
 				<div class="footer__social">
 					<p class="social__appeal">приєднуйтесь</p>
 					<ul class="socials">
@@ -442,7 +455,8 @@
 					</ul>
 				</div>
 
-				<!-- subscription -->
+				subscription
+
 				<form
 					class="subscribe"
 					name="subscription-form"
@@ -464,10 +478,11 @@
 					</div>
 				</form>
 			</div>
-		</footer>
+		</footer> -->
 
-		<!-- Modal block -->
-		<div class="backdrop is-hidden" data-modal>
+		Modal block
+
+		<!-- <div class="backdrop is-hidden" data-modal>
 			<div class="modal">
 				<button class="modal__button-close" data-modal-close>
 					<svg class="modal__icon" width="18" height="18">
@@ -475,7 +490,7 @@
 					</svg>
 				</button>
 
-				<!-- Request form -->
+				Request form
 
 				<form name="form">
 					<strong class="form__appeal"
@@ -552,7 +567,7 @@
 					<button class="form__button" type="submit">Відправити</button>
 				</form>
 			</div>
-		</div>
+		</div> -->
 		<script src="./js/modal.js"></script>
 	</body>
 </html>
