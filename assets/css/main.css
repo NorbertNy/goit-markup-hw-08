@@ -310,8 +310,20 @@ body {
   gap: 30px;
 }
 
-.features__item {
-  width: 270px;
+@media screen and (min-width: 480px) {
+  .features__item {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .features__item {
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .features__item {
+    width: 270px;
+  }
 }
 .features__item::before {
   content: "";
