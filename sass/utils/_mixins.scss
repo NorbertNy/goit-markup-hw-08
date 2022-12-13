@@ -1,3 +1,4 @@
+// Container mixin
 @mixin container($w: 480px, $mar: 0 auto, $pad: 0 15px) {
     @if $w {
         max-width: $w;
@@ -21,6 +22,7 @@
     }
 }
 
+// flex mixin
 @mixin flex($dis: flex, $fw: false, $fd: false, $ai: center, $jc: center, $indent: false) {
     @if $dis {
         display: $dis;
@@ -47,7 +49,20 @@
     }
 }
 
+// section ident mixin
 @mixin section-indent($pt: 94px, $pb: $pt) {
     padding-top: $pt;
     padding-bottom: $pb;
+}
+
+// grid mixin
+@mixin grid($indent: 30px) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: $indent;
+}
+
+// grid-item mixin
+@mixin grid-item($items: 1, $indent: 30px) {
+    flex-basis: calc((100% - $indent * ($items - 1)) / $items);
 }
